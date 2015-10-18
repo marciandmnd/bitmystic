@@ -1,0 +1,28 @@
+.navbar-text{
+	font-family: "Orbitron"!important;
+}
+
+body{
+	background-color: #E4F1FE;
+}
+
+.jumbotron{
+	border: 1px solid black;
+	box-shadow: 10px 10px 10px black;
+}
+
+#githubIcon, #emailIcon{
+	font-size: 40px;
+}
+
+#githubIcon a, #emailIcon a{
+	font-family: "Orbitron";
+}
+
+#ulProjectList li{
+	font-size: 30px;
+}
+
+#ulProjectList li a{
+	color: #F5AB35;
+}
