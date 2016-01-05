@@ -1,78 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='bitmysticApp'>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>BitMystic</title>
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Orbitron">
 	<link rel="stylesheet" href="style.css" >
-
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- Leave those next 4 lines if you care about users using IE8 -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/jquery.uriAnchor.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/typed.min.js"></script>
+  <script src='js/bitmystic.js'></script>
   </head>
   <body>
-  	<nav class="navbar navbar-default">
-  		<div class="container-fluid">
-  			<!-- Brand and toggle get grouped for better mobile display -->
-  			<div class="navbar-header">
-  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-  					<span class="sr-only">Toggle navigation</span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  					<span class="icon-bar"></span>
-  				</button>
-  				<a class="navbar-brand" href="#">
-  					<img src="img/diamond.png">
-  				</a>
-  				<p class="navbar-text">BitMystic - Professional Site of Marcian Diamond, FullStack Developer</p>
-
-  			</div>
-
-  			<!-- Collect the nav links, forms, and other content for toggling -->
-  			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  				<!-- <ul class="nav navbar-nav navbar-right">
-  					<li><a href="#">Link</a></li>
-  					<li class="dropdown">
-  						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-  						<ul class="dropdown-menu">
-  							<li><a href="#">Action</a></li>
-  							<li><a href="#">Another action</a></li>
-  							<li><a href="#">Something else here</a></li>
-  							<li role="separator" class="divider"></li>
-  							<li><a href="#">Separated link</a></li>
-  						</ul>
-  					</li>
-  				</ul> -->
+    <div id="bitmystic"></div>
+     <nav class="navbar navbar-default">
+      <div class="container-fluid">
+       <!-- Brand and toggle get grouped for better mobile display -->
+       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="#!page=home">
+          <img id='img-diamond' src="img/diamond.png" />
+          <p class="navbar-text" id='brand-text'>BitMystic</p>
+       </a>
+     </div>
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  				<ul class="nav navbar-nav navbar-right">
+  					<li><a href="#!page=projects">projects</a></li>
+            <li><a href="#!page=about">about</a></li>
+            <li><a href="#!page=contact">contact</a></li>
+  				</ul>
   			</div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
   	</nav>
-
-  	<div class="container">
-	  	<div class="jumbotron">
-	  		<h1>Welcome to my Home(page).  <span class="glyphicon glyphicon-home" aria-hidden="true"></span></h1>
-	  		<p>I apologize, at the moment, I'm renovating the site, but please checkout some of my projects:</p>
-	  		<ul id="ulProjectList">
-				<li><a href="http://shielded-garden-6372.herokuapp.com" target="_blank">RoR Apps</a></li>
-				<li><a href="http://onenonlyent.herokuapp.com" target="_blank">One N Only Ent.</a></li>
-				<li><a href="http://svcf.org/md/wordpress" target="_blank">SVCF</a></li>
-				<li><a href="http://t3mpo.herokuapp.com" target="_blank">T3MPO</a></li>
-	  		</ul>
-			<i id="githubIcon" class="fa fa-github-alt fa-4">&nbsp;&nbsp;<a href="http://www.github.com/marciandmnd">github.com/marciandmnd</a></i><br/>
-			<i id="emailIcon" class="fa fa-envelope fa-4">&nbsp;&nbsp;<a href="mailto:marciandmnd@gmail.com">marciandmnd@gmail.com</a></i>
-	  	</div>
-  	</div>
-  	<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <div class='page-wrapper'></div>
   </body>
-  </html>
+</html>

@@ -3,26 +3,92 @@
 }
 
 body{
-	background-color: #E4F1FE;
+	/*background-color: #E4F1FE;*/
+  background-color: transparent;
 }
 
-.jumbotron{
-	border: 1px solid black;
-	box-shadow: 10px 10px 10px black;
+#img-diamond{
+  margin-top: -20px;
 }
 
-#githubIcon, #emailIcon{
-	font-size: 40px;
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+.nav.navbar-right > li > a {
+  color: yellow;
+  font-family: "Orbitron";
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.2s linear;
 }
 
-#githubIcon a, #emailIcon a{
-	font-family: "Orbitron";
+.nav.navbar-right > li > a:hover {
+  color: red!important;
+  text-decoration: underline;
 }
 
-#ulProjectList li{
-	font-size: 30px;
+.nav.navbar-right > li > a:focus{
+  color: yellow!important;
 }
 
-#ulProjectList li a{
-	color: #F5AB35;
+#brand-text{
+  font-family: "Orbitron";
+  color: yellow!important;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.container h2{
+  font-family: "Orbitron";
+}
+
+html { 
+  background: url(img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.page-description, .page-media{
+  display:none;
+}
+.page-wrapper{
+  margin-top:40px;
+  min-height: 500px;
+  background-color: rgba(0,0,0,0.7);
+  text-align: center;
+}
+
+.page-wrapper > * {
+  color: white;
+  font-family: FontAwesome;
+}
+
+@media (max-width: 991px) {
+  #img-diamond{display:none;}
+}
+
+.project-description{
+  text-align: left;
+}
+
+#about-details{
+  text-align: left;
+}
+
+#div-about-pics{
+  text-align: center;
+  margin-top:30px;
+  margin-bottom: 30px;
+  /*float: none;
+  margin: 0 auto;*/
+}
+#div-about-pics img{
+  border-radius: 20px;
+}
+
+#contact-nodes a{
+  /*font-family: "Orbitron";*/
 }
