@@ -8,7 +8,7 @@ var bitmystic = (function(){
     page_headings : { home: 'Into the rabbit hole!', 
                       projects: 'Presto Manifesto!',
                       about: 'Who is the BitMystic?',
-                      contact: 'How may I be of assitance?'
+                      contact: 'How may I be of assistance?'
                     }
   };
   var onHashchange = function(event){
